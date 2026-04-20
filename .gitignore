@@ -28,3 +28,5 @@ venv/
 
 # Package lock (optional if you want)
 # package-lock.json
+
+node_modules/

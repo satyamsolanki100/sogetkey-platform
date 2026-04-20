@@ -1,0 +1,30 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Backend sensitive files
+server/.env
+client/.env
+python-service/.env
+
+# Build folders
+build/
+out/
+
+# OS files
+Thumbs.db
+
+# Python (for your python-service)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.envrc
+
+# Logs (extra safety)
+*.log
+
+# Package lock (optional if you want)
+# package-lock.json

@@ -49,7 +49,7 @@ CORS (FINAL WORKING VERSION)
 
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: ["http://localhost:5173", "https://sogetkey-platform.vercel.app"],
     credentials: true,
   }),
 );

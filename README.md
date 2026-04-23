@@ -1,16 +1,82 @@
-# React + Vite
+# SoGetKey – Smart Coupon Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+SoGetKey is a full-stack web application that allows users to search products and access verified coupons uploaded by providers. It connects product search with a user-driven coupon marketplace controlled by an admin approval system.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- JWT Authentication (Admin, Provider, Buyer)
+- Product search using external API
+- Provider dashboard to upload coupons with proof images
+- Admin approval system for coupons
+- Buyer access to verified coupons
+- Coupon application and external platform redirection
+- Provider earnings tracking
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+Frontend:
+
+- React (Vite), Tailwind CSS, Axios
+
+Backend:
+
+- Node.js, Express.js, MongoDB, Mongoose
+
+Other:
+
+- JWT Auth, Multer (file upload), Helmet, CORS
+
+---
+
+## Project Structure
+
+client/ → React frontend  
+server/ → Node + Express backend
+
+---
+
+## Key APIs
+
+- POST /api/auth/register
+- POST /api/auth/login
+- GET /api/products/search
+- POST /api/vouchers
+- GET /api/vouchers
+- GET /api/vouchers/product/:id
+
+---
+
+## Setup
+
+Backend:
+
+cd server
+npm install
+npm start
+
+Frontend:
+
+cd client
+npm install
+npm run dev
+
+---
+
+## Future Scope
+
+- AI-based product matching
+- Smart ranking system
+- Real OTP verification
+- Payment integration
+
+---
+
+## Author
+
+Satyam Kumar Solanki
